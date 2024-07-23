@@ -27,6 +27,7 @@
 
         header h1 {
             margin-bottom: 0.5rem;
+            font-size: 2.5rem; /* Larger font size for main header */
         }
 
         nav ul {
@@ -42,11 +43,22 @@
         nav ul li a {
             color: #ffffff; /* White text color for navigation links */
             text-decoration: none;
+            font-size: 1.2rem; /* Slightly larger font size for navigation links */
         }
 
         section {
             padding: 2rem;
             text-align: center;
+        }
+
+        section h2 {
+            font-size: 2rem; /* Larger font size for section headers */
+            margin-bottom: 1rem;
+        }
+
+        section p {
+            font-size: 1.1rem; /* Slightly larger font size for paragraphs */
+            margin-bottom: 1rem;
         }
 
         #home {
@@ -73,6 +85,14 @@
             margin: 0.5rem 0;
         }
 
+        #projects .project h3 {
+            font-size: 1.5rem; /* Larger font size for project titles */
+        }
+
+        #projects .project p {
+            font-size: 1rem; /* Slightly smaller font size for project descriptions */
+        }
+
         #contact ul {
             list-style: none;
             padding: 0;
@@ -82,18 +102,97 @@
             margin: 0.5rem 0;
         }
 
+        #contact ul li a {
+            font-size: 1.1rem; /* Slightly larger font size for contact links */
+        }
+
         footer {
             background: #000080; /* Navy blue background for footer */
             color: #ffffff; /* White text color for footer */
             text-align: center;
             padding: 1rem 0;
             margin-top: 2rem;
+            font-size: 1rem; /* Font size for footer text */
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem; /* Smaller font size for smaller screens */
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+
+            nav ul li a {
+                font-size: 1rem; /* Smaller font size for navigation links */
+            }
+
+            section {
+                padding: 1rem;
+            }
+
+            section h2 {
+                font-size: 1.5rem; /* Smaller font size for section headers */
+            }
+
+            section p {
+                font-size: 1rem; /* Smaller font size for paragraphs */
+            }
+
+            #projects .project h3 {
+                font-size: 1.25rem; /* Smaller font size for project titles */
+            }
+
+            #projects .project p {
+                font-size: 0.9rem; /* Smaller font size for project descriptions */
+            }
+
+            #contact ul li a {
+                font-size: 1rem; /* Smaller font size for contact links */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.75rem; /* Even smaller font size for very small screens */
+            }
+
+            nav ul li a {
+                font-size: 0.9rem; /* Even smaller font size for navigation links */
+            }
+
+            section h2 {
+                font-size: 1.25rem; /* Even smaller font size for section headers */
+            }
+
+            section p {
+                font-size: 0.9rem; /* Even smaller font size for paragraphs */
+            }
+
+            #projects .project h3 {
+                font-size: 1rem; /* Even smaller font size for project titles */
+            }
+
+            #projects .project p {
+                font-size: 0.8rem; /* Even smaller font size for project descriptions */
+            }
+
+            #contact ul li a {
+                font-size: 0.9rem; /* Even smaller font size for contact links */
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Onuche Paul</h1>
+        <h1>Onuche Ochala Paul</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -104,18 +203,17 @@
         </nav>
     </header>
     <section id="home">
-        <h2>Welcome to My Portfolio</h2>
         <p>I'm a front-end developer passionate about creating beautiful and functional web experiences.</p>
     </section>
     <section id="about">
         <h2>About Me</h2>
-        <p>As an entry-level software engineer, I have a solid foundation in programming, development frameworks, and cloud technologies. My enthusiasm for learning and adaptability drive me to expand my skills and contribute effectively. Though new to the industry, my passion for technology and dedication to excellence make me a motivated and valuable team member ready to make meaningful contributions.</p>
+        <p>As an entry-level software engineer, I have a solid foundation in programming, development frameworks, and cloud technologies. My enthusiasm for learning and adaptability drove me to expand my skills. Though new to the industry, my passion for technology and dedication to excellence make me a motivated and valuable team member ready to make meaningful contributions.</p>
     </section>
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
             <h3>Recycling Website</h3>
-            <p>Create a user-friendly recycling website to promote awareness and encourage recycling participation.</p>
+            <p>Created a user-friendly recycling website to promote awareness and encourage recycling participation.</p>
             <p><strong>Tech Stack:</strong> JavaScript, React.js, Firebase, Git</p>
             <a href="#">View Project:</a>
             <a href="https://github.com/Ochala27/recycling-website">GitHub Link</a>
@@ -139,7 +237,7 @@
         </ul>
     </section>
     <footer>
-        <p>&copy; 2024 Onuche Paul. All rights reserved.</p>
+        <p>&copy; 2024 Onuche Ochala Paul. All rights reserved.</p>
     </footer>
 </body>
 </html>
